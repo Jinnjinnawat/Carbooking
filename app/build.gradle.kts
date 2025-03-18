@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.carbooking"
-        minSdk = 24 // ลด minSdk เป็น 24 เพื่อรองรับอุปกรณ์มากขึ้น
+        minSdk = 26 // ลด minSdk เป็น 24 เพื่อรองรับอุปกรณ์มากขึ้น
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation("com.google.android.material:material:1.6.0")
     // Firebase Firestore
     implementation("com.google.firebase:firebase-firestore:24.10.0")
 
@@ -52,6 +53,9 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
+
 
     // Testing
     testImplementation(libs.junit)
